@@ -1,6 +1,6 @@
 package model;
 
-public class FullTimeStaff extends Employee implements Comparable<FullTimeStaff>{
+public class FullTimeStaff extends Employee{
     private double bonus = 0;
     private double fine = 0;
     private double hardSalary = 0;
@@ -54,10 +54,5 @@ public class FullTimeStaff extends Employee implements Comparable<FullTimeStaff>
                 ", Tiền thưởng=" + bonus +
                 ", Tiền phạt=" + fine +
                 ", Lương cứng=" + hardSalary + "\n";
-    }
-
-    @Override
-    public int compareTo(FullTimeStaff o) {
-        return Double.compare(this.hardSalary, o.hardSalary);
     }
 }
