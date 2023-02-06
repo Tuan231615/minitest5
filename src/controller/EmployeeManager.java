@@ -2,9 +2,7 @@ package controller;
 import model.Employee;
 import model.FullTimeStaff;
 import model.PartTimeStaff;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -45,7 +43,7 @@ public class EmployeeManager {
         for (Employee e : employees) {
             if (id.equals(e.getId())) {
                 if (e instanceof FullTimeStaff) {
-                    System.out.print("Mời bạn nhập mã nhân viên  : "); newId = input.nextLine();
+                    System.out.print("Mời bạn nhập id nhân viên  : "); newId = input.nextLine();
                     System.out.print("Mời bạn nhập tên nhân viên : "); newName = input.nextLine();
                     System.out.print("Mời bạn nhập tuổi nhân viên : "); newAge = Integer.parseInt(input.nextLine());
                     System.out.print("Mời bạn nhập sđt nhân viên : "); newNumberPhone = input.nextLine();
@@ -57,7 +55,7 @@ public class EmployeeManager {
                     ((FullTimeStaff) e).setBonus(newBonus);((FullTimeStaff) e).setFine(newFine);
                     ((FullTimeStaff) e).setHardSalary(newHardSalary);
                 } else if (e instanceof PartTimeStaff) {
-                    System.out.print("Mời bạn nhập mã nhân viên  : "); newId = input.nextLine();
+                    System.out.print("Mời bạn nhập id nhân viên  : "); newId = input.nextLine();
                     System.out.print("Mời bạn nhập tên nhân viên : "); newName = input.nextLine();
                     System.out.print("Mời bạn nhập tuổi nhân viên : "); newAge = Integer.parseInt(input.nextLine());
                     System.out.print("Mời bạn nhập sđt nhân viên : "); newNumberPhone = input.nextLine();
